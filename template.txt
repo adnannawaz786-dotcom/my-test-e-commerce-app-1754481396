@@ -1,0 +1,86 @@
+You are an expert developer. I want to build a universal scaffold for a **Next.js app** in a **strict JSON format**, where each file path is a key, and its contents are a valid string.
+
+Your task:
+
+1. Create a fully working **Next.js + Tailwind CSS** project structure for a **E-commerce Website** application, and Auto-generate a relevant, creative app name using the app's domain and purpose.
+2. Use **relative imports only** (e.g., `../components/Layout`).
+3. Include the following core structure:
+   - Pages directory routing (`pages/`).
+   - `_app.js` that wraps all pages in a persistent layout.
+   - `Layout.js` that renders a navigation system with active link highlighting.
+   - Include only pages strictly necessary for the APP functionality. Do not generate any About or placeholder pages.
+   -  Footer must always display the text "Made using PantheraBuilder" and be rendered persistently across all pages as part of the layout.
+   - All Tailwind styles initialized correctly in `globals.css`.
+   - `tailwind.config.js`, `postcss.config.js`, and `.gitignore`.
+   - `package.json` with required and up-to-date dependencies.
+
+4. **UI LIBRARY OPTIONS**:
+   shadcn/ui
+
+5. **DESIGN STYLE OPTIONS**:
+   Glassmorphism
+
+6. Mobile + Single Page Application Options:
+   - Bottom Navigation Bar (native-style mobile layout)
+   - SPA-like routing using next/router
+
+7. Loading Skeleton
+   - Enable Loading Skeleton to match Layout of pages (ADD OR REMOVE IF SELECTED TO HAVE)
+
+8. Implement these specific features:
+   - User Authentication
+   - Shopping Cart
+
+9. Design implementation:
+   - Gradient backgrounds and modern color schemes
+   - Smooth animations and micro-interactions
+   - Mobile-first responsive design
+   - Consistent spacing and typography scale
+   - Accessible color contrast and focus states
+
+10. Technical requirements:
+   - Support for file uploads and local storage when needed
+   - Responsive design that works on mobile and desktop
+   - Proper state management for complex interactions
+   - Error handling and loading states
+   - Accessibility features (ARIA labels, keyboard navigation)
+
+11. **ADDITIONAL INTEGRATIONS**:
+   - Framer Motion - Advanced animations
+
+12. Output everything as a **single, complete JSON object** with:
+    - Every file (new or modified) as a key-value pair.
+    - All file contents correctly escaped as valid JSON strings.
+    - **No explanations, no summaries, and no extra text.**
+
+13. Do NOT skip or omit anything. Include all necessary:
+    - Components, hooks, and utilities
+    - Styling and configuration files
+    - Example data and mock APIs if needed
+    - Background workers or service workers if required
+    - UI library setup and configuration
+    - Theme customization files
+
+14. Modal Glassmorphism Requirements:
+   - All modal/dialog components (`<Dialog>`, `<AlertDialog>`, `<Popover>`, etc.) must:
+     - Use glassmorphic styling: `backdrop-blur`, semi-transparent backgrounds, soft shadows, subtle borders.
+     - Support both light and dark modes correctly.
+     - Avoid transparency glitches by either:
+       - Styling the portal correctly, or
+       - Rendering the modal inline (`modal={false}`).
+     - Use Tailwind classes like: `"backdrop-blur-md bg-white/20 dark:bg-black/30 border border-white/30 shadow-lg rounded-xl p-6"`
+
+15. Structure the JSON so each entry follows this exact format:
+
+   {
+     "filename": {
+       "content": "file content here as a valid JSON string"
+     }
+   }
+
+Wrap the final output using triple backticks and label it as JSON:
+```json
+{ ... }
+
+Respond ONLY with the complete JSON object including all original files and the new/updated files with the requested features.
+No omissions, no partial output, no explanation.
